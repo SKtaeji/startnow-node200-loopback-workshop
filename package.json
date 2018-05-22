@@ -6,10 +6,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "mocha test/*.spec.js",
-    "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "test": "mocha test/*.spec.js --exit",
+    "start": "node ."
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -33,8 +31,8 @@
     "nsp": "^3.2.1"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/SKtaeji/startnow-node200-loopback-workshop.git"
   },
   "license": "UNLICENSED",
   "description": "startnow-node200-loopback-workshop"
