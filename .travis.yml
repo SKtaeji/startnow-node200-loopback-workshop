@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '9'
+dist: trusty
+services:
+- mongodb
+env:
+- NODE_ENV=production
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+script:
+- npm test
+deploy:
+  provider: heroku
+  app: sk-node200-loopback-workshop
+  on:
+    repo: SKtaeji/startnow-node200-loopback-workshop
