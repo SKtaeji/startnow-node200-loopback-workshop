@@ -2,8 +2,13 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+const mongodb = require('mongodb');
 
 var app = module.exports = loopback();
+
+let uri = process.env.MONGODB_URI;
+
+mongodb.MongoClient.connect(uri);
 
 app.start = function() {
   // start the web server
