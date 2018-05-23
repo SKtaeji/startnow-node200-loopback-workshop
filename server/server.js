@@ -6,7 +6,7 @@ const mongodb = require('mongodb');
 
 var app = module.exports = loopback();
 
-let uri = process.env.MONGODB_URI || "mongodb://heroku_d8jtbpnp:5nul8knrrqejqhqokdv6vj77lo@ds231360.mlab.com:31360/heroku_d8jtbpnp";
+let uri = process.env.MONGODB_URI || "mongodb://localhost:27017/loopback";
 
 mongodb.MongoClient.connect(uri);
 
